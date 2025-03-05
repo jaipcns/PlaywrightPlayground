@@ -1,6 +1,7 @@
 name: Super-Linter
 
-on: push
+on:
+  workflow_dispatch:  # This makes it only run manually, not on push
 
 jobs:
   super-lint:
@@ -14,6 +15,3 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      
-      
