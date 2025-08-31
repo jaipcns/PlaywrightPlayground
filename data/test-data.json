@@ -3,11 +3,20 @@
     "validUser": "thetestphatchanon@hotmail.com",
     "validPass": "123456789"
   },
-  "address": {
+  "address1": {
     "name": "Phatchanon",
     "mobileno": "0812345678",
     "zipcode": "10110",
     "address": "123/45 Ramindra Rd",
+    "city": "Bangkok",
+    "state": "Bangkok",
+    "country": "Thailand"
+  },
+  "address2": {
+    "name": "Sangsuriyothai",
+    "mobileno": "0987654321",
+    "zipcode": "10220",
+    "address": "111 Khaosan Rd",
     "city": "Bangkok",
     "state": "Bangkok",
     "country": "Thailand"

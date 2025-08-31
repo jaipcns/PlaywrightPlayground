@@ -7,7 +7,7 @@ export class LoginPage {
     this.dismissButton = page.getByText('Dismiss');
   }
 
-  async goto() {
+  async gotoLogin() {
     await this.page.goto('https://juice-shop.herokuapp.com/#/login');
     await this.dismissButton.click();
   }
