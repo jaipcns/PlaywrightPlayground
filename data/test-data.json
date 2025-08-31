@@ -1,0 +1,15 @@
+{
+  "login": {
+    "validUser": "thetestphatchanon@hotmail.com",
+    "validPass": "123456789"
+  },
+  "address": {
+    "name": "Phatchanon",
+    "mobileno": "0812345678",
+    "zipcode": "10110",
+    "address": "123/45 Ramindra Rd",
+    "city": "Bangkok",
+    "state": "Bangkok",
+    "country": "Thailand"
+  }
+}
