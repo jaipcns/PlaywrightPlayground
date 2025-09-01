@@ -38,6 +38,7 @@ export class HomePage {
   }
 
   async clickCheckoutButton() {
+    await this.checkoutButton.isVisible();
     if (await this.checkoutButton.isDisabled()) {   // Check if the basket is updated
       await this.page.reload();
     }

@@ -5,10 +5,17 @@ import { HomePage } from '../pages/home.page'
 import { NewAddressPage } from '../pages/new-address.page'
 import testData from '../data/test-data.json'
 
+let loginPage
+let homePage
+let newAddressPage
+
+test.beforeEach(async ({ page }) => {
+  loginPage = new LoginPage(page)
+  homePage = new HomePage(page)
+  newAddressPage = new NewAddressPage(page)
+})
+
 test('TC 1', async ({ page }) => {
-  const loginPage = new LoginPage(page)
-  const homePage = new HomePage(page)
-  const newAddressPage = new NewAddressPage(page)
   await loginPage.gotoLogin()
   await loginPage.login(testData.login.validUser, testData.login.validPass)
   await homePage.checkBasketButton()  // Verify user successfully logged in
@@ -21,9 +28,6 @@ test('TC 1', async ({ page }) => {
 })
 
 test('TC 2', async ({ page }) => {
-  const loginPage = new LoginPage(page)
-  const homePage = new HomePage(page)
-  const newAddressPage = new NewAddressPage(page)
   await loginPage.gotoLogin()
   await loginPage.login(testData.login.validUser, testData.login.validPass)
   await homePage.checkBasketButton()  // Verify user successfully logged in
@@ -37,7 +41,6 @@ test('TC 2', async ({ page }) => {
 })
 
 test('TC 3', async ({ page }) => {
-  const homePage = new HomePage(page)
   await homePage.gotoHomepage()
   await homePage.searchProduct('apple')
   await page.keyboard.press('Enter');
