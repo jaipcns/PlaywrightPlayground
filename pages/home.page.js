@@ -6,9 +6,6 @@ export class HomePage {
     this.basketButton = page.getByText(' Your Basket');
     this.applePomaceAddButton = page.locator('//div[contains(text(), "Apple Pomace")]/../../../div[2]/button');
     this.appleJuiceAddButton = page.locator('//div[contains(text(), "Apple Juice (1000ml)")]/../../../div[2]/button');
-    this.applePomaceItem = page.locator('//div[contains(text(), "Apple Pomace")]');
-    this.appleJuiceItem = page.locator('//div[contains(text(), "Apple Juice (1000ml)")]');
-    this.bananaJuiceItem = page.locator('//div[contains(text(), "Banana Juice (1000ml)")]');
     this.checkoutButton = page.locator('#checkoutButton');
     this.addNewAddressButton = page.getByText('Add New Address');
     this.searchButton = page.locator('#searchQuery');
