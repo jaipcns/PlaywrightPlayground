@@ -1,5 +1,23 @@
 # PlaywrightPlayground
 
+Check Node.js
+```bash
+node -v
+npm -v
+```
+If you don't have Node.js
+
+2 Options
+
+1. Homebrew
+```bash
+brew install node
+```
+
+2. Node.js official site
+
+Download LTS version
+https://nodejs.org
 
 ## Installation
 
